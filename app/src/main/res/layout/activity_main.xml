@@ -18,7 +18,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/avatar"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="@sample/posts.json/data/author" />
+        tools:text="Нетология. Университет интернет-профессий будущего" />
 
     <TextView
         android:id="@+id/published"
@@ -32,7 +32,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/avatar"
         app:layout_constraintTop_toBottomOf="@+id/author"
-        tools:text="@sample/posts.json/data/published" />
+        tools:text="21 мая в 18:36" />
 
     <ImageView
         android:id="@+id/avatar"
@@ -72,7 +72,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/topBarrier"
-        tools:text="@sample/posts.json/data/content" />
+        tools:text="Привет, это новая Нетология! Когда-то Нетология начиналась с интенсивов по онлайн-маркетингу. Затем появились курсы по дизайну, разработке, аналитике и управлению. Мы растём сами и помогаем расти студентам: от новичков до уверенных профессионалов. Но самое важное остаётся с нами: мы верим, что в каждом уже есть сила, которая заставляет хотеть больше, целиться выше, бежать быстрее. Наша миссия — помочь встать на путь роста и начать цепочку перемен → http://netolo.gy/fyb" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/bottomBarrier"
