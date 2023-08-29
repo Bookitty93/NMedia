@@ -33,6 +33,21 @@ class MainActivity : AppCompatActivity() {
         )
 
         with(binding) {
+
+            root.setOnClickListener {
+                println("root")
+            }
+
+            avatar.setOnClickListener {
+                println("avatar")
+            }
+            content.setOnClickListener {
+                println("content")
+            }
+            menu.setOnClickListener {
+                println("menu")
+            }
+
             author.text = post.author
             published.text = post.published
             content.text = post.content
@@ -41,7 +56,8 @@ class MainActivity : AppCompatActivity() {
             views.text = post.views.toString()
 
             like.setIconResource(if (post.likedByMe) R.drawable.ic_liked else R.drawable.ic_baseline_favorite_border_24)
-            like.iconTint = ColorStateList.valueOf(if (post.likedByMe) Color.RED else Color.BLACK)
+            like.iconTint =
+                ColorStateList.valueOf(if (post.likedByMe) Color.RED else Color.BLACK)
 
             binding.like.setOnClickListener {
                 post.likedByMe = !post.likedByMe
