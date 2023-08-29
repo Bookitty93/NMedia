@@ -43,7 +43,8 @@
         app:layout_constraintBottom_toBottomOf="@id/topBarrier"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@sample/posts_avatars" />
+        android:contentDescription="@string/avatar"
+        android:src="@drawable/post_avatar_drawable" />
 
     <ImageView
         android:id="@+id/menu"
