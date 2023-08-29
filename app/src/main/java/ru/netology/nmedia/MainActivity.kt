@@ -34,20 +34,6 @@ class MainActivity : AppCompatActivity() {
 
         with(binding) {
 
-            root.setOnClickListener {
-                println("root")
-            }
-
-            avatar.setOnClickListener {
-                println("avatar")
-            }
-            content.setOnClickListener {
-                println("content")
-            }
-            menu.setOnClickListener {
-                println("menu")
-            }
-
             author.text = post.author
             published.text = post.published
             content.text = post.content
